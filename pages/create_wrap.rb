@@ -30,7 +30,7 @@ class CreateWrap < PageHelper
 		click PublishBtn
 		wait_for(60) { is_displayed? ModalClose }
 		click ModalClose
-		wait_for(15) { is_displayed? BackHome }
+		sleep(3)
 		click BackHome
 	end
 
