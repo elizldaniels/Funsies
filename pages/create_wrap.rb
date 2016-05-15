@@ -10,7 +10,7 @@ class CreateWrap < PageHelper
 	ModalClose = {css: '.modal-footer button' }
 	BackHome = { css: '.action-bar_item.action-bar_item--narrow button' }
 
-	NewWrap = { css: '.wrap-grid-item_thumbnail'}
+	NewWrap = { css: '.lazy-load_container.ng-scope'}
 
 
 	def initialize(driver)

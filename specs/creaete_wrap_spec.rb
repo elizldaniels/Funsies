@@ -15,7 +15,7 @@ describe 'Create Wrap' do
 		@login.with('elizldaniels', 'Monkeyw1!')
 		sleep(5)
 		@wrap.with_template()
-		sleep(5)
+		sleep(8)
 		expect(@wrap.was_created?).to eql true
 	end
 
