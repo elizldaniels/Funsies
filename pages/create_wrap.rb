@@ -10,6 +10,8 @@ class CreateWrap < PageHelper
 	ModalClose = {css: '.modal-footer button' }
 	BackHome = { css: '.action-bar_item.action-bar_item--narrow button' }
 
+	CloseAdd = {css: '.help-tour_nav.help-tour_nav--close'}
+
 	NewWrap = { css: '.lazy-load_container.ng-scope'}
 
 
@@ -26,19 +28,16 @@ class CreateWrap < PageHelper
 		wait_for(5) { is_displayed? CreatePetWrap }
 		scroll_to CreatePetWrap
 		click CreatePetWrap
-		wait_for(5) { is_displayed? PublishBtn }
+		wait_for(5) { is_displayed? CloseAdd }
+		click CloseAdd
+		sleep(3)
 		click PublishBtn
-		wait_for(60) { is_displayed? ModalClose }
+		wait_for(60) { is_displayed? CloseAdd }
+		click CloseAdd
 		click ModalClose
 		sleep(3)
 		click BackHome
 	end
-
-	def was_created?()
-		is_displayed? NewWrap
-	end
-
-
-
+	
 
 end

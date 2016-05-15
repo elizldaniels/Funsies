@@ -27,8 +27,4 @@ class Login < PageHelper
 		click SubmitBtn
 	end
 
-	def success?
-		is_displayed? Avatar
-	end
-
 end
