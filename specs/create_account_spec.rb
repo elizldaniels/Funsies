@@ -12,7 +12,7 @@ describe 'Create Account' do
 	end
 	
 	it 'will create an account, then create a wrap' do
-		@account.create('Sansa5@Westeros.com', 'wrap123', 'Sansa', 'Stark', 'Heir to the North', '1118675309')
+		@account.create('Tormund@Westeros.com', 'wrap123', 'Tormund', 'Giantsbane', 'Wildling', '1118675309')
 		sleep(10)
 		@wrap.with_template()
 	end
